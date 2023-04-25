@@ -1,0 +1,21 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col">
+            <div class="card text-bg-danger text-center">
+                <div class="card-header">
+                    Error
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{titleError}}</h5>
+                    {{#if error}}
+                        <p class="card-text">{{{error}}}</p>
+                    {{else}}
+                        <p class="card-text">No hay mensaje de error.</p>
+                    {{/if}}
+                    
+                    <a href="{{link}}" class="btn btn-primary">{{textLink}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container p-4 d-flex justify-content-center flex-column">
+    <div class="row">
+        <div class="col text-uppercase text-center">
+            <h1>Ingresar</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 rounded shadow p-4">
+            <form method="post" action="/session/login">
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword" required>
+                </div>
+                <div class="mb-2 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary text-uppercase">Entrar</button>
+                </div>
+                <div class="mb-2 d-flex justify-content-center">
+                    <a href="/register" class="btn btn-primary text-uppercase">Registrarse</a>
+                </div>
+                <div class="mb-2 d-flex justify-content-center">
+                    <p> ò </p>
+                </div>
+                <div class="mb-2 d-flex justify-content-center">
+                    <a href="/github" class="btn btn-primary text-uppercase">Ingresar con GitHub</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

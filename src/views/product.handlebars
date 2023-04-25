@@ -1,0 +1,29 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-10">
+            <div class="card mb-3 shadow">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        {{#if this.thumbnails}} 
+                            <img src="{{thumbnails.[0]}}" class="img-fluid rounded-start p-4" alt="...">
+                        {{else}}
+                            <img src="img/image-not-available.jpg" class="img-fluid rounded-start p-4" alt="">
+                        {{/if}}
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{title}}</h5>
+                            <p class="card-text"> <span class="fw-bold text-uppercase"> Descripción: </span>{{description}} </p>
+                            <p class="card-text"> <span class="fw-bold text-uppercase"> Codigo: </span>{{code}} </p>
+                            <p class="card-text"> <span class="fw-bold text-uppercase"> Precio: </span>{{price}} </p>
+                            <p class="card-text"> <span class="fw-bold text-uppercase"> Estatus: </span>{{status}} </p>
+                            <p class="card-text"> <span class="fw-bold text-uppercase"> Disponibilidad: </span>{{stock}} </p>
+                            <p class="card-text"> <span class="fw-bold text-uppercase"> Categoria: </span>{{category}} </p>
+                            <a href="#" class="btn btn-primary text-uppercase"> Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

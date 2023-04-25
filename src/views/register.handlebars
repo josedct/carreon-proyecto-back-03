@@ -1,0 +1,35 @@
+<div class="container p-4 d-flex justify-content-center flex-column">
+    <div class="row">
+        <div class="col text-uppercase text-center">
+            <h1>Register</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 rounded shadow p-4">
+            <form method="post" action="/session/register">
+                <div class="mb-3">
+                    <label for="userFirst" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="userFirst" name="first_name">
+                </div>
+                <div class="mb-3">
+                    <label for="userLast" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="userLast" name="last_name">
+                </div>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="userEmail" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="userAge" class="form-label">Edad</label>
+                    <input type="Number" max="99" min="10" step="1" value="18" class="form-control" id="userAge" name="age">
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary text-uppercase">Enviar datos</button>
+                <a href="/login" class="btn btn-primary text-uppercase">Inicias sesión</a>
+            </form>
+        </div>
+    </div>
+</div>
