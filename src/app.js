@@ -14,7 +14,7 @@ const sessionRouter = require('./router/session.router')
 const viewsRouter = require('./router/views.router')
 
 const server = express()
-const uri = MONGO_URI  //'mongodb+srv://backecommerce:DRnbvYV25Av9YcXz@codercluster.gg34oks.mongodb.net/ecommerce?retryWrites=true&w=majority' //dato privado
+const uri = MONGO_URI 
 
 server.use(express.json())
 server.use(express.urlencoded({extends: true}))
@@ -32,7 +32,7 @@ server.use(session({
         },
         ttl: 100
     }),
-    secret: SESSION_SECRET, //'c0d3r', //dato privado
+    secret: SESSION_SECRET,
     resave: true,
     saveUninitialized: true
 }))
@@ -49,6 +49,6 @@ server.use('/',viewsRouter)
 mongoose.connect(uri)
     .then( () => {
         console.log('DB conectada...')
-        server.listen(PORT, () => console.log('Server Up')) //dato privado
+        server.listen(PORT, () => console.log('Server Up')) 
     })
     .catch(error => handleError(error));

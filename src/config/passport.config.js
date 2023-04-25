@@ -29,7 +29,7 @@ const initializePassport = () =>{
                 email,
                 age,
                 password: hashPassword(password),
-                role: email === ADMIN_EMAIL ? 'admin' : 'usuario' // dato privado
+                role: email === ADMIN_EMAIL ? 'admin' : 'usuario' 
             }
 
             const result = await userModel.create(newUser)
@@ -66,9 +66,9 @@ const initializePassport = () =>{
     
 
     passport.use('github', new GitHubStrategy({
-        clientID: CLIENT_ID, //"Iv1.976aa461e8507604", // dato privado
-        clientSecret: CLIENT_SECRET, //"209a7fd28ea219082f127a8a498fbd315f033cf2", // dato privado
-        callbackURL: CALLBACK_URL //"http://localhost:8080/session/githubcallback" // dato privado
+        clientID: CLIENT_ID, 
+        clientSecret: CLIENT_SECRET, 
+        callbackURL: CALLBACK_URL 
     }, async(accessToken, refreshToken, profile, done) => {
 
         try {
